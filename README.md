@@ -1,3 +1,5 @@
+![css-quick-reference](https://user-images.githubusercontent.com/5186564/42080376-5bd34404-7b37-11e8-8209-04be08ded9ac.gif)
+
 ## Develop
 
 ```bash
