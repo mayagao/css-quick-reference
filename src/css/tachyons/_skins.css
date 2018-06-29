@@ -133,4 +133,5 @@
 .bg-washed-green { background-color: var(--washed-green); }
 .bg-washed-yellow { background-color: var(--washed-yellow); }
 .bg-washed-red { background-color: var(--washed-red); }
+.bg-washed-purple { background-color: var(--washed-purple); }
 .bg-inherit { background-color: inherit; }
