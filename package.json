@@ -7,10 +7,25 @@
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
+   "license": "MIT",
+   "devDependencies": {
+    "copy-files": "^0.1.0",
+    "immutable-css-cli": "^1.1.1",
+    "normalize.css": "^7.0.0",
+    "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
+    "watch": "^1.0.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch-css": "npm run build:watch",
+    "mutations": "immutable-css src/css/tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/css/tachyons/tachyons.css > src/css/tachyons.css",
+    "build:minify": "tachyons src/css/tachyons/tachyons.css -m > src/css/tachyons.min.css",
+    "build:watch": "watch \"npm run build\" ./src/css/tachyons"
   }
 }
