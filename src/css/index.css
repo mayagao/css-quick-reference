@@ -35,6 +35,9 @@ pre,
   height: 12px;
   width: 12px;
 }
+.property-reset  {
+  counter-reset: hi;
+}
 .highlighted-item::before {
   counter-increment: hi;
   content: counter(hi);
